@@ -4,6 +4,30 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+   int v[100][100],Se=1,Sd=1,i,n,j;
+    int >> n;
+    for(i=0;i<n;i++){
+        for(j=0;j<n;j++){
+            int >> v[i][j];
+        }
+    }
+    for(i=0;i<n;i++){
+        for(j=0;j<n;j++){
+            if(i<j&&i+j<n-1){
+                Se=Se+v[i][j];
+            }
+            if(i>j&&i+j>n-1){
+               Sd=Sd+v[i][j];
+        }
+            }
+            if(Se<Sd)
+                cout << "Sd a nagyobb";
+            {
+                else
+            }
+            cout << "Se a nagyobb";
+        }
+
+    }
     return 0;
 }
